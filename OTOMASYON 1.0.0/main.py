@@ -28,10 +28,10 @@ class MainPage(QMainWindow):
         self.second_page.ui1.kesfetyorum.toggled.connect(self.kesfetyorum)
         self.second_page.ui1.konumyorum.toggled.connect(self.konumyorum)
     def open2page(self):
-        otomysql = mysql.connector.connect(host="89.252.183.162",
-                                           user="social11_OtomasyonKontrol",
-                                           password="Suskun184.",
-                                           database="social11_Otomasyon1.0.0")
+        otomysql = mysql.connector.connect(host="***********************",
+                                           user="*********************",
+                                           password="********************",
+                                           database="*******************")
         self.cursor = otomysql.cursor()
         self.cursor.execute(f"Select*From otomasyon Where mail= '{self.ui.linemail.text()}' and sifre='{self.ui.linesifre.text()}'")
         self.a = self.cursor.fetchone()
