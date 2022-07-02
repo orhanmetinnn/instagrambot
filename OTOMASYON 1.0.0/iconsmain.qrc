@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="iconsmain">
+    <file>inslogo.jpg</file>
+  </qresource>
+</RCC>
